@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context="com.InvoiceData_Version1.UserSettings">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:hint="Enter Registered Name"
+                            android:imeActionId="@+id/login"
+
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textStyle="bold"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="#f90a26"
+                        android:textSize="9dp"/>
+
+
+                    <LinearLayout
+
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        tools:layout_editor_absoluteY="60dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="245dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:text="Registered Mobiles No."
+                                android:textColor="#0e2271"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/Mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/userPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/male_user"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="20dp"
+                android:text="Registered Vehicle(s)"
+                android:textColor="#0e2271"/>
+
+            <Spinner
+                android:id="@+id/carSpinner"
+                android:layout_width="355dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#0e2271"/>
+
+            <RadioGroup
+                android:id="@+id/CarExpenceNature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Maintainance"
+                    android:textColor="#0e2271"/>
+
+                <RadioButton
+                    android:id="@+id/Petrol_Desiel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Petrol/Desiel"/>
+
+                <RadioButton
+                    android:id="@+id/Repaires"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repaires"/>
+            </RadioGroup>
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<EditText-->
+            <!--android:layout_width="268dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:hint="New Number"-->
+            <!--android:inputType="phone"-->
+            <!--android:maxLines="1"/>-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ADD"/>-->
+            <!--</LinearLayout>-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="SaveDetails"
+                android:text="SAVE"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
